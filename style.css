@@ -107,7 +107,6 @@ li {
 }
 
 .about {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,18 +124,18 @@ li {
 
 .about-container {
     width: 75vw;
-    margin: 2em auto;
+    margin: 2em auto;   
     display: flex;
 }
 
 .about-image {
     justify-content: center;
     align-items: center;
-    width: 25vw;
+    width: 25vw;    
 }
 
 .about-image>img {
-    height: 30em;
+    height: 30em;     
     width: 100%;
     border-radius: 3em;
     justify-content: center;
@@ -173,7 +172,6 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* border: 1px solid; */
 }
 
 .details p {
@@ -202,11 +200,12 @@ li {
 }
 
 .container {
-    display: grid;
+    display: flex;
     margin: 0 auto;
     padding: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .skill {    
@@ -214,8 +213,8 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1em;
     padding: 1em;
+    flex-basis: 50%;
 }
 
 .skill>h3 {
@@ -327,13 +326,13 @@ button{
         width: 100%;
     }
 
+    .skill{
+        flex-basis: 80%;
+    }
+
     li {
         width: auto;
         justify-content: center;
-    }
-
-    .about {
-        height: 175vh;
     }
 
     .about-container {
@@ -360,14 +359,6 @@ button{
         position: absolute;
         left: 1rem;
         top: 1rem;
-    }
-
-    .about{
-        height: 200vh;
-    }
-
-    .skills{
-        height: 175vh;
     }
 
     .about-container {
